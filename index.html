@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sadovnikov</title>
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
 		<div class="home">
 			<p class="home-title">
-				НС
 			</p>			
 		</div>
 		<div class="nav">
@@ -18,13 +18,13 @@
 	</header>
 	<div class="about">
 		<header class="about-header">
-			<h3 class="about-header__title">
-				Что обо мне говорят				
-			</h3>
-			<div class="about-header__left-btn">				
-			</div>		
-			<div class="about-header__left-btn">				
-			</div>		
+			<div class="about-header__container">				
+				<h1 class="header__title header__title-about">
+					Что обо мне говорят				
+				</h1>
+				<div class="about-header__left-btn"><</div>		
+				<div class="about-header__right-btn">></div>	
+			</div>	
 		</header>
 		<div class="about-body">
 			<div class="about-body__block">
@@ -39,8 +39,8 @@
 				</div>
 				<div class="about-body__block-author">
 					<img src="" alt="" class="about-body__pic-author">
-					<h6 class="about-body__character">Lorem ipsum</h6>
-					<p class="about-body__character-duty">dolor sit</p>
+					<h3 class="about-body__character">Имя автора отзыва</h3>
+					<p class="about-body__character-duty">Деятельность автора</p>
 				</div>		
 			</div>	
 			<div class="about-body__block">
@@ -53,82 +53,85 @@
 				</div>
 				<div class="about-body__block-author">
 					<img src="" alt="" class="about-body__pic-author">
-					<h6 class="about-body__character">repudiandae dolorum</h6>
-					<p class="about-body__character-duty">nisi officia natus</p>
+					<h3 class="about-body__character">Имя автора отзыва</h3>
+					<p class="about-body__character-duty">Деятельность автора</p>
 				</div>		
 			</div>		
 		</div>
 		<div class="contact-me">
-			<h3 class="contact-me__title">
+			<h1 class="header__title header__title-contact-me">
 				Связаться со мной		
-			</h3>		
+			</h1>		
 			<div class="contact-me__form">
 				<div class="contact-me__container">				
-					<div class="contact-me__form-name">
-						<label for="" class="form__label-name">Введите ваше имя</label>
-						<input type="text" class="form__input-name" id="form__input-name" placeholder="Ivanov Ivan"> 
+					<div class="contact-me__form-input contact-me__form-name">
+						<label for="" class="form__label form__label-name">Введите ваше имя</label>
+						<input type="text" class="form__input-name form__input-contact" id="form__input-name" placeholder="Ivanov Ivan"> 
 						<img src="" alt="" class="form__pic-name">
 					</div>
-					<div class="contact-me__form-email">
-						<label for="" class="form__label-email">Введите ваш e-mail</label>
-						<input type="text" class="form__input-email" id="form__input-email" placeholder="i.ivanov@mail.ru">
+					<div class="contact-me__form-input contact-me__form-email">
+						<label for="" class="form__label form__label-email">Введите ваш e-mail</label>
+						<input type="text" class="form__input-email form__input-contact" id="form__input-email" placeholder="i.ivanov@mail.ru">
 						<img src="" alt="" class="form__pic-email">					
 					</div>					
 				</div>
-				<div class="contact-me__form-message">	
-					<label for="" class="form__label-message">Сообщение к письму</label>
+				<div class="contact-me__form-input contact-me__form-message">	
+					<label for="" class="form__label form__label-message">Сообщение к письму</label>
 					<input type="text" class="form__input-message" id="form__input-message" placeholder="Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса">
 					<img src="" alt="" class="form__pic-message">								
 				</div>
 			</div>	
-			<button type="submit" class="contact-me__form-submit">
-				Отправить
-			</button>			
-		</div>
-		<footer class="footer">
-			<div class="footer-theme">
-				<div class="footer__copyright">
-					&copy;
-				</div>
-				<div class="footer__copyright-by-container">
-					<div class="footer__copyright-by">
-						Никита Садовников
-					</div>		
-					<div class="footer__copyright-theme">
-						Личный сайт веб-разработчика
-					</div>	
-				</div>
+			<div class="submit-wrap">
+				<button type="submit" class="contact-me__form-submit">
+					ОТПРАВИТЬ
+				</button>			
 			</div>
-			<div class="footer-main">
-				<div class="footer__nav">
-					<ul class="footer__nav-list">
-						<li class="footer__nav-item">Главная</li>
-						<li class="footer__nav-item">Обо мне</li>
-						<li class="footer__nav-item">Навыки</li>
-						<li class="footer__nav-item">Работы</li>
-						<li class="footer__nav-item">Отзывы</li>
-						<li class="footer__nav-item">Связаться</li>
-					</ul>
+		</div>
+	</div>	
+	<footer class="footer">
+		<div class="footer-theme">
+			<div class="footer__copyright">
+				&copy; 2019
+			</div>
+			<div class="footer__copyright-by-container">
+				<div class="footer__copyright-by">
+					Никита Садовников
+				</div>		
+				<div class="footer__copyright-theme">
+					Личный сайт веб-разработчика
 				</div>	
-				<div class="footer__info-wrap">
-					<div class="footer__info-page">
-						<p class="footer__info-text">
-							Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
-						</p>
-						<div class="footer__info-links">
-							<img src="" alt="" class="footer__info-instagram">
-							<img src="" alt="" class="footer__info-vk">
-							<img src="" alt="" class="footer__info-pig">							
-						</div>
+			</div>
+		</div>
+		<div class="footer-main">
+			<div class="footer__nav">
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">Главная</li>
+					<li class="footer__nav-item">Обо мне</li>
+					<li class="footer__nav-item">Навыки</li>
+					<li class="footer__nav-item">Работы</li>
+					<li class="footer__nav-item">Отзывы</li>
+					<li class="footer__nav-item">Связаться</li>
+				</ul>
+			</div>	
+			<div class="footer__info-wrap">
+				<div class="footer__info-page">
+					<p class="footer__info-text">
+						Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
+					</p>
+					<div class="footer__info-links">
+						<img src="" alt="" class="footer__info-instagram">
+						<img src="" alt="" class="footer__info-vk">
+						<img src="" alt="" class="footer__info-pig">							
 					</div>
-					<div class="footer__info-quote">
-						<p class="footer__info-text">
-							Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете <br><span class="span-white">Martin Golding</span>
-						</p>						
-					</div>					
-				</div>			
+				</div>
+				<div class="footer__info-quote">
+					<p class="footer__info-text">
+						Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете <br><span class="span-white">Martin Golding</span>
+					</p>						
+				</div>					
 			</div>			
-		</footer>		
-	</div>
+		</div>			
+	</footer>		
+	
 </body>
 </html>

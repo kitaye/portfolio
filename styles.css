@@ -3,6 +3,61 @@ body {
 	margin: 0;	
 }
 
+.about-header__btn-container {
+	display: flex;
+    justify-content: center;
+}
+
+.title-about {
+	text-align: center;
+}
+
+.title {
+	font-size: 55px;
+}
+
+.cirle-btn {
+	font-size: 50px;
+}
+
+.title-about {
+	margin: 0;
+}
+
+.about {
+	padding: 200px 100px;
+}
+
+.contact-me__form-submit {
+	text-transform: uppercase;
+}
+
+.about-body__text {
+	margin: 0;	
+}
+
+.margin-bottom-100 {
+	margin-bottom: 100px;	
+}
+
+.about-body__pic-author {
+	width: 150px;
+	height: 150px;
+	border-radius: 50px;
+	display: block;
+}
+
+.about-body__block-author {
+	display: flex;
+}
+
+
+
+
+
+
+/*
+
 .about {
 	padding: 70px;
 	background: black;
@@ -107,10 +162,9 @@ body {
 	 display: flex;
 	 margin: 0;
 	 padding: 0;
-
 }
 
-.footer__nav-item {
+.footer__nav-item {	
 	margin-right: 5%;
 }
 
@@ -140,4 +194,4 @@ body {
 
 .footer-main {
 	width: 70%;
-}
+}*/
